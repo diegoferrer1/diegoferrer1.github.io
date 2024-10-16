@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Degustación - Restaurante Gourmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sticky footer styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">La Degustación</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nosotros.html#Mision">Misson</a></li>
+                        <li><a class="dropdown-item" href="nosotros.html#Vison">Vison</a></li>
+                        <li><a class="dropdown-item" href="nosotros.html#Valores">Values</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="acordeon">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Menu</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Vine</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Kids</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-5" id="tab-content">
+            <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+                <div> 
+                    <p>Pizza Margherita <span class="precio">$10</span></p>
+                    <p class="descripcion">Classic Italian pizza with tomatoes, mozzarella, and basil.</p>
+                </div>
+                <div> 
+                    <p>Spaghetti Bolognese <span class="precio">$10</span></p>
+                    <p class="descripcion">Traditional spaghetti with meat sauce.</p>
+                </div>
+                <div> 
+                    <p>Cheeseburger <span class="precio">$10</span></p>
+                    <p class="descripcion">Juicy beef patty with cheddar cheese, lettuce, and tomato.</p>
+                </div>
+                <div> 
+                    <p>Sushi (salmon rolls, tuna, etc.) <span class="precio">$12</span></p>
+                    <p class="descripcion">Assorted fresh sushi rolls with salmon, tuna, and more.</p>
+                </div>
+                <div> 
+                    <p>Grilled chicken <span class="precio">$11</span></p>
+                    <p class="descripcion">Tender grilled chicken with herbs and spices.</p>
+                </div>
+                <div> 
+                    <p>Caesar salad <span class="precio">$8</span></p>
+                    <p class="descripcion">Crisp romaine lettuce with Caesar dressing and croutons.</p>
+                </div>
+                <div> 
+                    <p>Roasted beef tacos <span class="precio">$9</span></p>
+                    <p class="descripcion">Tacos filled with seasoned roasted beef and fresh toppings.</p>
+                </div>
+                <div> 
+                    <p>BBQ pork ribs <span class="precio">$13</span></p>
+                    <p class="descripcion">Succulent pork ribs with a smoky BBQ sauce.</p>
+                </div>
+                <div> 
+                    <p>Lasagna <span class="precio">$11</span></p>
+                    <p class="descripcion">Layers of pasta, cheese, and hearty meat sauce.</p>
+                </div>
+                <div> 
+                    <p>French onion soup <span class="precio">$7</span></p>
+                    <p class="descripcion">Classic French soup with caramelized onions and melted cheese.</p>
+                </div>
+                <div> 
+                    <p>Beef steak <span class="precio">$15</span></p>
+                    <p class="descripcion">Grilled beef steak cooked to your preference.</p>
+                </div>
+                <div> 
+                    <p>Grilled fish <span class="precio">$13</span></p>
+                    <p class="descripcion">Fresh grilled fish with lemon and herbs.</p>
+                </div>
+                <div> 
+                    <p>Pad Thai <span class="precio">$12</span></p>
+                    <p class="descripcion">Traditional Thai stir-fried noodles with shrimp and peanuts.</p>
+                </div>
+                <div> 
+                    <p>Enchiladas <span class="precio">$9</span></p>
+                    <p class="descripcion">Corn tortillas rolled with filling and topped with sauce.</p>
+                </div>
+                <div> 
+                    <p>Lamb ribs <span class="precio">$14</span></p>
+                    <p class="descripcion">Tender lamb ribs grilled to perfection.</p>
+                </div>
+                <div> 
+                    <p>Ravioli <span class="precio">$10</span></p>
+                    <p class="descripcion">Stuffed pasta with ricotta and spinach in a creamy sauce.</p>
+                </div>
+                <div> 
+                    <p>Chicken fajitas <span class="precio">$10</span></p>
+                    <p class="descripcion">Grilled chicken served with peppers and onions.</p>
+                </div>
+                <div> 
+                    <p>Galician octopus <span class="precio">$16</span></p>
+                    <p class="descripcion">Traditional Spanish dish with boiled octopus and paprika.</p>
+                </div>
+                <div> 
+                    <p>Ceviche <span class="precio">$12</span></p>
+                    <p class="descripcion">Fresh raw fish marinated in citrus juice and spices.</p>
+                </div>
+                <div> 
+                    <p>Mushroom risotto <span class="precio">$11</span></p>
+                    <p class="descripcion">Creamy risotto with mushrooms and Parmesan cheese.</p>
+                </div>
+                <div> 
+                    <p>Paella <span class="precio">$14</span></p>
+                    <p class="descripcion">Spanish rice dish with seafood, chicken, and saffron.</p>
+                </div>
+                <div> 
+                    <p>Fried chicken <span class="precio">$10</span></p>
+                    <p class="descripcion">Crispy fried chicken with a golden-brown crust.</p>
+                </div>
+                <div> 
+                    <p>Chili con carne <span class="precio">$9</span></p>
+                    <p class="descripcion">Spicy beef chili with beans and tomatoes.</p>
+                </div>
+                <div> 
+                    <p>Shawarma <span class="precio">$8</span></p>
+                    <p class="descripcion">Middle Eastern wrap filled with spiced meat and vegetables.</p>
+                </div>
+                <div> 
+                    <p>Burritos <span class="precio">$9</span></p>
+                    <p class="descripcion">Flour tortilla filled with beans, rice, and your choice of meat.</p>
+                </div>
+                <div> 
+                    <p>Miso soup <span class="precio">$7</span></p>
+                    <p class="descripcion">Japanese soup with tofu, seaweed, and green onions.</p>
+                </div>
+                <div> 
+                    <p>Falafel <span class="precio">$8</span></p>
+                    <p class="descripcion">Deep-fried chickpea balls served with pita and tahini.</p>
+                </div>
+                <div> 
+                    <p>Gnocchi <span class="precio">$10</span></p>
+                    <p class="descripcion">Soft potato dumplings served with tomato or cream sauce.</p>
+                </div>
+                <div> 
+                    <p>Empanadas <span class="precio">$7</span></p>
+                    <p class="descripcion">Fried pastry filled with meat, cheese, or vegetables.</p>
+                </div>
+                <div> 
+                    <p>Chicken tikka masala <span class="precio">$12</span></p>
+                    <p class="descripcion">Indian dish of marinated chicken in a spiced tomato sauce.</p>
+                </div>
+                <div> 
+                    <p>Shrimp curry <span class="precio">$13</span></p>
+                    <p class="descripcion">Creamy curry with shrimp and coconut milk.</p>
+                </div>
+                <div> 
+                    <p>Sashimi <span class="precio">$15</span></p>
+                    <p class="descripcion">Thinly sliced raw fish served with soy sauce and wasabi.</p>
+                </div>
+                <div> 
+                    <p>Ham croquettes <span class="precio">$6</span></p>
+                    <p class="descripcion">Fried croquettes filled with ham and béchamel sauce.</p>
+                </div>
+                <div> 
+                    <p>Grilled meat <span class="precio">$14</span></p>
+                    <p class="descripcion">A variety of grilled meats served with chimichurri.</p>
+                </div>
+                <div> 
+                    <p>Schnitzel <span class="precio">$11</span></p>
+                    <p class="descripcion">Breaded and fried cutlet served with lemon.</p>
+                </div>
+                <div> 
+                    <p>Dim sum <span class="precio">$9</span></p>
+                    <p class="descripcion">Steamed or fried dumplings with various fillings.</p>
+                </div>
+                <div> 
+                    <p>Pepperoni pizza <span class="precio">$11</span></p>
+                    <p class="descripcion">Pizza topped with pepperoni and mozzarella cheese.</p>
+                </div>
+                <div> 
+                    <p>Poke bowl <span class="precio">$12</span></p>
+                    <p class="descripcion">Hawaiian dish with raw fish, rice, and fresh vegetables.</p>
+                </div>
+                <div> 
+                    <p>Thai green curry <span class="precio">$12</span></p>
+                    <p class="descripcion">Spicy Thai curry with coconut milk and vegetables.</p>
+                </div>
+                <div> 
+                    <p>Mac and Cheese <span class="precio">$9</span></p>
+                    <p class="descripcion">Creamy macaroni and cheese with a golden crust.</p>
+                </div>
+                <div> 
+                    <p>Ramen soup <span class="precio">$10</span></p>
+                    <p class="descripcion">Japanese noodle soup with broth, meat, and vegetables.</p>
+                </div>
+                <div> 
+                    <p>Vegetable and chicken wok <span class="precio">$11</span></p>
+                    <p class="descripcion">Stir-fried vegetables and chicken with soy sauce.</p>
+                </div>
+                <div> 
+                    <p>Salad Caprese <span class="precio">$8</span></p>
+                    <p class="descripcion">Fresh mozzarella, tomatoes, and basil with olive oil.</p>
+                </div>
+                <div> 
+                    <p>Steak with chorizo <span class="precio">$16</span></p>
+                    <p class="descripcion">Grilled steak served with spicy chorizo sausage.</p>
+                </div>
+                <div> 
+                    <p>Hummus with pita <span class="precio">$6</span></p>
+                    <p class="descripcion">Creamy hummus served with warm pita bread.</p>
+                </div>
+                <div> 
+                    <p>Spanish omelet <span class="precio">$7</span></p>
+                    <p class="descripcion">Traditional Spanish dish with potatoes and eggs.</p>
+                </div>
+                <div> 
+                    <p>Arepas <span class="precio">$8</span></p>
+                    <p class="descripcion">Cornmeal cakes filled with cheese, meat, or beans.</p>
+                </div>
+                <div> 
+                    <p>Fettuccine Alfredo <span class="precio">$10</span></p>
+                    <p class="descripcion">Pasta with a rich and creamy Alfredo sauce.</p>
+                </div>
+                <div> 
+                    <p>Vietnamese pho <span class="precio">$10</span></p>
+                    <p class="descripcion">Vietnamese noodle soup with beef and herbs.</p>
+                </div>
+                <div> 
+                    <p>Seafood soup <span class="precio">$13</span></p>
+                    <p class="descripcion">Hearty soup with a mix of fresh seafood.</p>
+                </div>
+            </div>
+            
+            
+            <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                
+                    <div> 
+                        <p>Viña Esmeralda Sauvignon Blanc <span class="precio">$15</span></p>
+                        <p class="descripcion">Crisp and refreshing white wine with citrus and tropical fruit notes.</p>
+                    </div>
+                    <div> 
+                        <p>Château du Soleil Merlot <span class="precio">$18</span></p>
+                        <p class="descripcion">Smooth red wine with ripe plum, blackberry, and subtle oak flavors.</p>
+                    </div>
+                    <div> 
+                        <p>Monte Bello Cabernet Sauvignon <span class="precio">$22</span></p>
+                        <p class="descripcion">Bold and full-bodied red wine with rich blackcurrant and tannin notes.</p>
+                    </div>
+                    <div> 
+                        <p>Luna Llena Chardonnay <span class="precio">$16</span></p>
+                        <p class="descripcion">Buttery white wine with hints of apple, pear, and vanilla.</p>
+                    </div>
+                    <div> 
+                        <p>Viña del Mar Pinot Noir <span class="precio">$19</span></p>
+                        <p class="descripcion">Elegant red wine with cherry, raspberry, and earthy undertones.</p>
+                    </div>
+                    <div> 
+                        <p>Vega Real Tempranillo <span class="precio">$17</span></p>
+                        <p class="descripcion">Spanish red wine with flavors of dark fruits and a hint of spice.</p>
+                    </div>
+                    <div> 
+                        <p>Castillo de Luna Malbec <span class="precio">$20</span></p>
+                        <p class="descripcion">Rich and fruity red wine with plum, blackberry, and cocoa notes.</p>
+                    </div>
+                    <div> 
+                        <p>Marqués de Sol Syrah <span class="precio">$21</span></p>
+                        <p class="descripcion">Spicy and bold red wine with flavors of dark berries and pepper.</p>
+                    </div>
+                    <div> 
+                        <p>Brisa Marina Rosé <span class="precio">$14</span></p>
+                        <p class="descripcion">Light and refreshing rosé with notes of strawberry and citrus.</p>
+                    </div>
+                    <div> 
+                        <p>Viña del Mar Riesling <span class="precio">$16</span></p>
+                        <p class="descripcion">Aromatic white wine with floral, citrus, and honey notes.</p>
+                    </div>
+                    <div> 
+                        <p>Monte Bello Zinfandel <span class="precio">$23</span></p>
+                        <p class="descripcion">Robust red wine with bold flavors of black fruit and spice.</p>
+                    </div>
+                    <div> 
+                        <p>Luna Llena Viognier <span class="precio">$18</span></p>
+                        <p class="descripcion">Fragrant white wine with peach, apricot, and floral aromas.</p>
+                    </div>
+                    <div> 
+                        <p>Vega Real Garnacha <span class="precio">$19</span></p>
+                        <p class="descripcion">Lush red wine with ripe cherry, plum, and a touch of spice.</p>
+                    </div>
+                    <div> 
+                        <p>Castillo de Luna Cabernet Franc <span class="precio">$20</span></p>
+                        <p class="descripcion">Smooth red wine with herbal, blackcurrant, and earthy flavors.</p>
+                    </div>
+                    <div> 
+                        <p>Brisa Marina Moscato <span class="precio">$13</span></p>
+                        <p class="descripcion">Sweet and fruity white wine with notes of peach, orange blossom, and honey.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">
+                    <div> 
+                        <p>Sándwiches <span class="precio">$5</span></p>
+                        <p class="descripcion">Clásicos sándwiches con queso, jamón o pavo.</p>
+                    </div>
+                    <div> 
+                        <p>Brochetas de pollo o verduras <span class="precio">$6</span></p>
+                        <p class="descripcion">Brochetas saludables de pollo o una variedad de verduras.</p>
+                    </div>
+                    <div> 
+                        <p>Pasta con salsa de tomate <span class="precio">$7</span></p>
+                        <p class="descripcion">Pasta servida con una rica salsa de tomate casera.</p>
+                    </div>
+                    <div> 
+                        <p>Arroz con verduras <span class="precio">$6</span></p>
+                        <p class="descripcion">Arroz al vapor acompañado de verduras frescas.</p>
+                    </div>
+                    <div> 
+                        <p>Fruta fresca <span class="precio">$4</span></p>
+                        <p class="descripcion">Selección de frutas frescas de temporada.</p>
+                    </div>
+                    <div> 
+                        <p>Hamburguesas <span class="precio">$8</span></p>
+                        <p class="descripcion">Jugosas hamburguesas de carne o pollo con queso.</p>
+                    </div>
+                    <div> 
+                        <p>Nuggets de pollo <span class="precio">$6</span></p>
+                        <p class="descripcion">Crujientes nuggets de pollo con salsa para mojar.</p>
+                    </div>
+                    <div> 
+                        <p>Pizza <span class="precio">$7</span></p>
+                        <p class="descripcion">Mini pizzas con queso, tomate y opciones de toppings.</p>
+                    </div>
+                    <div> 
+                        <p>Macarrones con queso <span class="precio">$5</span></p>
+                        <p class="descripcion">Macarrones en una deliciosa salsa de queso.</p>
+                    </div>
+                    <div> 
+                        <p>Hot dogs <span class="precio">$6</span></p>
+                        <p class="descripcion">Hot dogs clásicos con salchicha, mostaza y ketchup.</p>
+                    </div>
+                    <div> 
+                        <p>Papas fritas <span class="precio">$4</span></p>
+                        <p class="descripcion">Papas fritas doradas y crujientes.</p>
+                    </div>
+                    <div> 
+                        <p>Ensalada <span class="precio">$5</span></p>
+                        <p class="descripcion">Ensalada fresca con lechuga, tomate y zanahoria.</p>
+                    </div>
+                    <div> 
+                        <p>Puré de papa <span class="precio">$4</span></p>
+                        <p class="descripcion">Cremoso puré de papas con mantequilla.</p>
+                    </div>
+                    <div> 
+                        <p>Verduras al vapor <span class="precio">$5</span></p>
+                        <p class="descripcion">Mix de verduras al vapor, ideal para una comida ligera.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+      
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">La Degustación is a restaurant that combines tradition and innovation, offering a unique and personalized gastronomic experience. Its commitment to quality, sustainability and passion for cooking have made it a benchmark in Constanza, positioning it as the gastronomic destination of choice for those looking to enjoy the best flavors of Spain and the Dominican Republic.
+
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Contacs</h6>
+                    <ul class="footer-links">
+                        <li><p>Phone: +1 123 456 789</p></li>
+                        <li>E-mail: diegoferrer2209@gmail.com</li>
+                        <li>Address: Wave 2 Residential, Department N2, Los Garcia Street, Santiago de los Caballeros </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="nosotros.html">About Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                        <a href="#">Diego Ferrer CORP.</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><img src="facebook.png" alt="" style="width: 24px; height: 24px;"></a></li>
+                        <li><a class="twitter" href="#"><img src="gorjeo.png" alt="" style="width: 24px; height: 24px;"></a></li>
+                        <li><a class="dribbble" href="#"><img src="instagram.png" alt="" style="width: 24px; height: 24px;"></a></li>
+                        <li><a class="linkedin" href="#"><img src="linkedin.png" alt="" style="width: 24px; height: 24px;"></a></li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.acordeon{
+    margin-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.acordeon {
+    flex-grow: 1;
+}
+
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.precio {
+    float: right;
+    margin-left: 20px;
+}
+
+.descripcion {
+    color: gray;
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente más pequeño */
+    margin-top: -5px; /* Opcional: para reducir el espacio entre el nombre del producto y la descripción */
+}
